@@ -1,0 +1,1699 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+
+.grid {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 65px;
+  width: 100%;
+  -webkit-box-shadow: 5px 0 5px grey;
+          box-shadow: 5px 0 5px grey;
+}
+
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-container img {
+  width: 140px;
+  height: 46px;
+  margin-top: 10px;
+}
+
+header .header-container .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-container .account div {
+  height: 65px;
+  line-height: 64px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+
+header .header-container .account .recent-employee {
+  margin-left: 10px;
+  color: #3167eb;
+  font-weight: 600;
+}
+
+.overlay {
+  width: 100%;
+  height: 760px;
+  background-color: #e2e2e2;
+}
+
+.overlay .signIn-container {
+  padding-top: 20px;
+  position: absolute;
+  width: 400px;
+  height: 330px;
+  border-radius: 40px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: 101;
+  background-color: white;
+}
+
+.overlay .signIn-container h2 {
+  margin: 0;
+  margin-left: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  padding-top: 15px;
+}
+
+.overlay .signIn-container .login-name,
+.overlay .signIn-container .login-password {
+  width: 300px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.overlay .signIn-container .login-name input,
+.overlay .signIn-container .login-password input {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: #eeeeee;
+  border: none;
+  outline: none;
+  padding-left: 45px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.overlay .signIn-container .login-name i,
+.overlay .signIn-container .login-password i {
+  position: absolute;
+  z-index: 5;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.overlay .signIn-container .btn-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.overlay .signIn-container .btn-area button {
+  cursor: pointer;
+  width: 300px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3167eb;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.overlay .signIn-container #error-area {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Sidebar {
+  margin-top: 66px;
+  background-color: white;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  -webkit-box-shadow: 2px 0 2px grey;
+          box-shadow: 2px 0 2px grey;
+}
+
+.Sidebar a {
+  text-decoration: none;
+}
+
+.Sidebar .Sidebar_options {
+  border-radius: 5px;
+  line-height: 46.4px;
+  width: 226.2px;
+  height: 46.4px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Sidebar .Sidebar_options:hover {
+  background-color: #b9c1c9;
+}
+
+.Sidebar .Sidebar_options i {
+  color: #3167eb;
+  font-size: 28px;
+  padding-right: 20px;
+}
+
+.Sidebar .btn-logOut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.Sidebar .btn-logOut button {
+  cursor: pointer;
+  width: 230px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3167eb;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.inside-grid {
+  max-width: 1183px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Inventory {
+  width: 100%;
+  height: 100%;
+  margin-left: 300px;
+  margin-top: 110px;
+}
+
+.Inventory .Inventory-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Inventory .Inventory-header h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.Inventory .Inventory-header .Inventory-control {
+  margin-top: 25px;
+}
+
+.Inventory .Inventory-header .Inventory-control input {
+  width: 300px;
+  height: 35px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+.Inventory .Inventory-header .Inventory-control #search,
+.Inventory .Inventory-header .Inventory-control #add {
+  cursor: pointer;
+  width: 100px;
+  height: 33px;
+  margin-left: 30px;
+  background-color: #fff;
+  border-style: solid;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  outline: none;
+}
+
+.Inventory .Inventory-header .Inventory-control #search:hover,
+.Inventory .Inventory-header .Inventory-control #add:hover {
+  border: none;
+  background-color: #3167eb;
+  color: white;
+}
+
+.Inventory .Inventory-header .Inventory-control #add {
+  width: 150px;
+  border: none;
+  background-color: #3167eb;
+  color: white;
+}
+
+.Inventory .Inventory-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0 0.1rem 0.25rem grey;
+          box-shadow: 0 0.1rem 0.25rem grey;
+}
+
+.Inventory .Inventory-container .item {
+  border: 1px solid rgba(108, 117, 125, 0.25);
+  -webkit-box-shadow: 0 0.1rem 0.25rem #d9d9d9;
+          box-shadow: 0 0.1rem 0.25rem #d9d9d9;
+  width: 250px;
+  height: 380px;
+  margin-top: 31px;
+  margin-bottom: 31px;
+}
+
+.Inventory .Inventory-container .item:hover {
+  border-color: grey;
+}
+
+.Inventory .Inventory-container .item img {
+  z-index: 49;
+  width: 248px;
+  height: 220px;
+  cursor: pointer;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+
+.Inventory .Inventory-container .item .item-information {
+  width: 250px;
+}
+
+.Inventory .Inventory-container .item .item-information .item-name,
+.Inventory .Inventory-container .item .item-information .item-price,
+.Inventory .Inventory-container .item .item-information .item-purpose {
+  font-family: "Open Sans", sans-serif;
+  padding-left: 10px;
+}
+
+.Inventory .Inventory-container .item .item-information .item-name {
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+.Inventory .Inventory-container .item .item-information .item-name:hover {
+  color: #3167eb;
+}
+
+.Inventory .Inventory-container .item .item-information .item-purpose {
+  padding-top: 20px;
+  font-size: 14px;
+  font-style: italic;
+  color: #999999;
+}
+
+.Inventory .Inventory-container .item .item-information .item-separate {
+  width: 100%;
+  height: 0.2px;
+  background-color: #999999;
+  margin-top: 10px;
+}
+
+.Inventory .Inventory-container .item .item-information .item-price {
+  color: #3167eb;
+  padding-top: 8px;
+  font-weight: 600;
+}
+
+.Inventory .Inventory-container .item .btn-area {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Inventory .Inventory-container .item .btn-area a {
+  text-decoration: none;
+  color: black;
+}
+
+.Inventory .Inventory-container .item .btn-area .btn-edit,
+.Inventory .Inventory-container .item .btn-area .btn-delete {
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70px;
+  height: 35px;
+  border: 1px solid rgba(107, 111, 116, 0.25);
+}
+
+.Inventory .Inventory-container .item .btn-area .btn-edit i,
+.Inventory .Inventory-container .item .btn-area .btn-delete i {
+  padding-top: 8px;
+  padding-left: 6px;
+}
+
+.Inventory .Inventory-container .item .btn-area .btn-edit span,
+.Inventory .Inventory-container .item .btn-area .btn-delete span {
+  padding-left: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+.Inventory .Inventory-container .item .btn-area .btn-edit i {
+  padding-left: 8px;
+}
+
+.Inventory .Inventory-container .item .btn-area .btn-edit span {
+  padding-left: 9px;
+}
+
+.Inventory .Inventory-container .item .btn-area .btn-edit:hover {
+  border-color: grey;
+}
+
+.Inventory .Inventory-container .item .btn-area .btn-delete {
+  border-color: red;
+}
+
+.Inventory .Inventory-container .item .btn-area .btn-delete span,
+.Inventory .Inventory-container .item .btn-area .btn-delete i {
+  color: red;
+}
+
+.Inventory .Inventory-container .item .btn-area .btn-delete:hover {
+  background-color: red;
+  color: white;
+}
+
+.Inventory .Inventory-container .item .btn-area .btn-delete:hover span,
+.Inventory .Inventory-container .item .btn-area .btn-delete:hover i {
+  color: white;
+}
+
+.Customers {
+  width: 100%;
+  height: 100%;
+  margin-left: 300px;
+  margin-top: 110px;
+}
+
+.Customers .Customers-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Customers .Customers-header h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.Customers .Customers-header .Customers-control {
+  margin-top: 25px;
+}
+
+.Customers .Customers-header .Customers-control input {
+  width: 300px;
+  height: 35px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+.Customers .Customers-header .Customers-control #search {
+  cursor: pointer;
+  width: 100px;
+  height: 33px;
+  margin-left: 30px;
+  background-color: #fff;
+  border-style: solid;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  outline: none;
+}
+
+.Customers .Customers-header .Customers-control #search:hover {
+  border: none;
+  background-color: #3167eb;
+  color: white;
+}
+
+.Customers .Customers-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 400px;
+  -webkit-box-shadow: 0 0.1rem 0.25rem grey;
+          box-shadow: 0 0.1rem 0.25rem grey;
+  overflow: scroll;
+}
+
+.Customers .Customers-container .table {
+  width: 100%;
+}
+
+.Customers .Customers-container .table .Customers-container-title {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Customers .Customers-container .table .Customers-container-title .id {
+  width: 40px;
+  color: #3167eb;
+  font-weight: 700;
+}
+
+.Customers .Customers-container .table .Customers-container-title .name,
+.Customers .Customers-container .table .Customers-container-title .address,
+.Customers .Customers-container .table .Customers-container-title .email {
+  width: 300px;
+  color: #3167eb;
+  font-weight: 700;
+}
+
+.Customers .Customers-container .table .Customers-container-title .phone {
+  color: #3167eb;
+  font-weight: 700;
+}
+
+.Customers .Customers-container .table .Customers-container-title #hidden-checkbox {
+  visibility: hidden;
+}
+
+.Customers .Customers-container .table .Customers-container-content {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #c7c4c4;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-right: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Customers .Customers-container .table .Customers-container-content #cb-customer {
+  margin-top: 18px;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.Customers .Customers-container .table .Customers-container-content .id {
+  width: 40px;
+}
+
+.Customers .Customers-container .table .Customers-container-content .name,
+.Customers .Customers-container .table .Customers-container-content .address,
+.Customers .Customers-container .table .Customers-container-content .email {
+  width: 300px;
+}
+
+.Customers a {
+  text-decoration: none;
+}
+
+.Customers .btn-area {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Customers .btn-area .btn-edit {
+  margin-bottom: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #3167eb;
+  border: 1px solid rgba(107, 111, 116, 0.25);
+}
+
+.Customers .btn-area .btn-edit i {
+  padding-left: 20px;
+  color: white;
+}
+
+.Customers .btn-area .btn-edit span {
+  color: white;
+  padding-left: 9px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Users {
+  width: 100%;
+  height: 100%;
+  margin-left: 300px;
+  margin-top: 110px;
+}
+
+.Users .Users-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Users .Users-header h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.Users .Users-header .Users-control {
+  margin-top: 25px;
+}
+
+.Users .Users-header .Users-control input {
+  width: 300px;
+  height: 35px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+.Users .Users-header .Users-control #search {
+  cursor: pointer;
+  width: 100px;
+  height: 33px;
+  margin-left: 30px;
+  background-color: #fff;
+  border-style: solid;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  outline: none;
+}
+
+.Users .Users-header .Users-control #search:hover {
+  border: none;
+  background-color: #3167eb;
+  color: white;
+}
+
+.Users .Users-header .Users-control #add_emp {
+  color: white;
+  cursor: pointer;
+  width: 150px;
+  height: 33px;
+  margin-left: 30px;
+  background-color: #3167eb;
+  border: none;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  outline: none;
+}
+
+.Users .Users-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 500px;
+  -webkit-box-shadow: 0 0.1rem 0.25rem grey;
+          box-shadow: 0 0.1rem 0.25rem grey;
+  overflow: scroll;
+}
+
+.Users .Users-container .Users-container-title {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Users .Users-container .Users-container-title .id {
+  width: 40px;
+  color: #3167eb;
+  font-weight: 700;
+}
+
+.Users .Users-container .Users-container-title .name,
+.Users .Users-container .Users-container-title .address,
+.Users .Users-container .Users-container-title .email {
+  width: 300px;
+  color: #3167eb;
+  font-weight: 700;
+}
+
+.Users .Users-container .Users-container-title #hidden-checkbox {
+  visibility: hidden;
+}
+
+.Users .Users-container .Users-container-content {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #c7c4c4;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-right: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Users .Users-container .Users-container-content #cb-customer {
+  margin-top: 18px;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.Users .Users-container .Users-container-content .id {
+  width: 40px;
+}
+
+.Users .Users-container .Users-container-content .name,
+.Users .Users-container .Users-container-content .address,
+.Users .Users-container .Users-container-content .gender {
+  width: 300px;
+}
+
+.Users a {
+  text-decoration: none;
+}
+
+.Users .btn-area {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Users .btn-area .btn-edit {
+  margin-bottom: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #3167eb;
+  border: 1px solid rgba(107, 111, 116, 0.25);
+}
+
+.Users .btn-area .btn-edit i {
+  padding-left: 20px;
+  color: white;
+}
+
+.Users .btn-area .btn-edit span {
+  color: white;
+  padding-left: 9px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Add_products {
+  width: 100%;
+  height: 1000px;
+  margin-left: 300px;
+  margin-top: 110px;
+}
+
+.Add_products h1 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.Add_products .Add_products_container {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 40%;
+  height: 750px;
+  -webkit-box-shadow: 0 0.1rem 0.25rem grey;
+          box-shadow: 0 0.1rem 0.25rem grey;
+}
+
+.Add_products .Add_products_container form {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Add_products .Add_products_container form .form-element {
+  margin-top: 20px;
+}
+
+.Add_products .Add_products_container form .form-element input {
+  width: 100%;
+  height: 30px;
+}
+
+.Add_products .Add_products_container form .form-element h3 {
+  color: #3167eb;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.Add_products .Add_products_container form .form-element #inputImg_avatar,
+.Add_products .Add_products_container form .form-element #inputImg_details {
+  width: 293px;
+  height: 35px;
+  display: none;
+}
+
+.Add_products .Add_products_container form .form-element #lb_inputImg_avatar,
+.Add_products .Add_products_container form .form-element #lb_inputImg_details {
+  display: block;
+  cursor: pointer;
+  background-color: #ebebeb;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+  height: 20px;
+  width: 80px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 2px;
+}
+
+.Add_products .Add_products_container form .form-element #inputImg {
+  display: none;
+}
+
+.Add_products .Add_products_container form .form-element img {
+  width: 80px;
+  height: 80px;
+}
+
+.Add_products .Add_products_container form .btn-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.Add_products .Add_products_container form .btn-area button {
+  cursor: pointer;
+  width: 100%;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3167eb;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Edit_products {
+  width: 100%;
+  height: 100%;
+  margin-left: 300px;
+  margin-top: 110px;
+}
+
+.Edit_products h1 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.Edit_products h2 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.Edit_products .Edit_products_container {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 40%;
+  height: 100%;
+  padding-bottom: 25px;
+  -webkit-box-shadow: 0 0.1rem 0.25rem grey;
+          box-shadow: 0 0.1rem 0.25rem grey;
+}
+
+.Edit_products .Edit_products_container form {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Edit_products .Edit_products_container form .form-element {
+  margin-top: 20px;
+}
+
+.Edit_products .Edit_products_container form .form-element h3 {
+  color: #3167eb;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.Edit_products .Edit_products_container form .form-element input {
+  width: 100%;
+  height: 35px;
+  outline: none;
+}
+
+.Edit_products .Edit_products_container form .add_product_details {
+  display: none;
+}
+
+.Edit_products .Edit_products_container form .product_details,
+.Edit_products .Edit_products_container form .add_product_details_show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 18px;
+}
+
+.Edit_products .Edit_products_container form .product_details .product_details_item h3,
+.Edit_products .Edit_products_container form .add_product_details_show .product_details_item h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  display: inline;
+}
+
+.Edit_products .Edit_products_container form .product_details .product_details_item input,
+.Edit_products .Edit_products_container form .add_product_details_show .product_details_item input {
+  width: 50px;
+  height: 30px;
+}
+
+.Edit_products .Edit_products_container form .product_details .btn-save,
+.Edit_products .Edit_products_container form .add_product_details_show .btn-save {
+  line-height: 30px;
+  font-size: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.Edit_products .Edit_products_container form .product_details .btn-save:hover,
+.Edit_products .Edit_products_container form .add_product_details_show .btn-save:hover {
+  color: #3167eb;
+}
+
+.Edit_products .Edit_products_container form .add_details {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #3167eb;
+}
+
+.Edit_products .Edit_products_container form .inactive {
+  display: none;
+}
+
+.Edit_products .Edit_products_container form .btn-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.Edit_products .Edit_products_container form .btn-area .btn {
+  cursor: pointer;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3167eb;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Add_user {
+  width: 100%;
+  height: 1000px;
+  margin-left: 300px;
+  margin-top: 110px;
+}
+
+.Add_user h1 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.Add_user .Add_user_container {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 40%;
+  height: 780px;
+  -webkit-box-shadow: 0 0.1rem 0.25rem grey;
+          box-shadow: 0 0.1rem 0.25rem grey;
+}
+
+.Add_user .Add_user_container form {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Add_user .Add_user_container form .form-element {
+  margin-top: 20px;
+}
+
+.Add_user .Add_user_container form .form-element h3 {
+  color: #3167eb;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.Add_user .Add_user_container form .form-element input,
+.Add_user .Add_user_container form .form-element select,
+.Add_user .Add_user_container form .form-element option {
+  width: 100%;
+  height: 35px;
+  outline: none;
+}
+
+.Add_user .Add_user_container form .btn-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.Add_user .Add_user_container form .btn-area button {
+  cursor: pointer;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3167eb;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Edit_user {
+  width: 100%;
+  height: 1000px;
+  margin-left: 300px;
+  margin-top: 110px;
+}
+
+.Edit_user h1 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.Edit_user .Edit_user_container {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 40%;
+  height: 780px;
+  -webkit-box-shadow: 0 0.1rem 0.25rem grey;
+          box-shadow: 0 0.1rem 0.25rem grey;
+}
+
+.Edit_user .Edit_user_container form {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Edit_user .Edit_user_container form .form-element {
+  margin-top: 20px;
+}
+
+.Edit_user .Edit_user_container form .form-element h3 {
+  color: #3167eb;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.Edit_user .Edit_user_container form .form-element input,
+.Edit_user .Edit_user_container form .form-element select,
+.Edit_user .Edit_user_container form .form-element option {
+  width: 100%;
+  height: 35px;
+  outline: none;
+}
+
+.Edit_user .Edit_user_container form .btn-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.Edit_user .Edit_user_container form .btn-area #btn-edit {
+  cursor: pointer;
+  width: 40%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3167eb;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Edit_user .Edit_user_container form .btn-area #btn-delete {
+  cursor: pointer;
+  width: 40%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Edit_customer {
+  width: 100%;
+  height: 900px;
+  margin-left: 300px;
+  margin-top: 110px;
+}
+
+.Edit_customer h1 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.Edit_customer .Edit_customer_container {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 40%;
+  height: 630px;
+  -webkit-box-shadow: 0 0.1rem 0.25rem grey;
+          box-shadow: 0 0.1rem 0.25rem grey;
+}
+
+.Edit_customer .Edit_customer_container form {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Edit_customer .Edit_customer_container form .form-element {
+  margin-top: 20px;
+}
+
+.Edit_customer .Edit_customer_container form .form-element h3 {
+  color: #3167eb;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.Edit_customer .Edit_customer_container form .form-element input,
+.Edit_customer .Edit_customer_container form .form-element select,
+.Edit_customer .Edit_customer_container form .form-element option {
+  width: 100%;
+  height: 35px;
+  outline: none;
+}
+
+.Edit_customer .Edit_customer_container form .btn-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.Edit_customer .Edit_customer_container form .btn-area #btn-edit {
+  cursor: pointer;
+  width: 40%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3167eb;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Edit_customer .Edit_customer_container form .btn-area #btn-delete {
+  cursor: pointer;
+  width: 40%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Invoices {
+  width: 100%;
+  height: 100%;
+  margin-left: 300px;
+  margin-top: 110px;
+}
+
+.Invoices .Invoices-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Invoices .Invoices-header h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.Invoices .Invoices-header .Invoices-control {
+  margin-top: 30px;
+}
+
+.Invoices .Invoices-header .Invoices-control input {
+  width: 300px;
+  height: 35px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+.Invoices .Invoices-header .Invoices-control #search {
+  cursor: pointer;
+  width: 100px;
+  height: 33px;
+  margin-left: 30px;
+  background-color: #fff;
+  border-style: solid;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  outline: none;
+}
+
+.Invoices .Invoices-header .Invoices-control #search:hover {
+  border: none;
+  background-color: #3167eb;
+  color: white;
+}
+
+.Invoices .Invoices-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 500px;
+  -webkit-box-shadow: 0 0.1rem 0.25rem grey;
+          box-shadow: 0 0.1rem 0.25rem grey;
+  overflow: scroll;
+}
+
+.Invoices .Invoices-container table {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Invoices .Invoices-container table .Invoices-container-title {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Open Sans", sans-serif;
+  /* .title_stt {
+                    width: 40px;
+                    color: $main-color;
+                    font-weight: 700;
+                } */
+  /* .title_id {
+                    padding-left: 15px;
+                }
+                .title_name {
+                    padding-left: 47px;
+                }
+                .title_phone {
+                    padding-left: 80px;
+                }*/
+}
+
+.Invoices .Invoices-container table .Invoices-container-title td {
+  width: 80%;
+}
+
+.Invoices .Invoices-container table .Invoices-container-title .title_stt,
+.Invoices .Invoices-container table .Invoices-container-title .title_name,
+.Invoices .Invoices-container table .Invoices-container-title .title_phone,
+.Invoices .Invoices-container table .Invoices-container-title .title_total,
+.Invoices .Invoices-container table .Invoices-container-title .title_id,
+.Invoices .Invoices-container table .Invoices-container-title .title_status {
+  color: #3167eb;
+  font-weight: 700;
+}
+
+.Invoices .Invoices-container table .Invoices-container-title #hidden-checkbox {
+  visibility: hidden;
+}
+
+.Invoices .Invoices-container table .Invoices-container-content {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #c7c4c4;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-right: 5px;
+  font-family: "Open Sans", sans-serif;
+  /* .stt {
+                    width: 40px;
+                    padding-left: 5px;
+                }
+                .id{
+                    padding-left: ;
+                }
+                .name,
+                .phone,
+                .total,
+                .id,
+                .status {
+                    width: 240px;
+                }
+                .total {
+                    padding-left: 35px;
+                } */
+}
+
+.Invoices .Invoices-container table .Invoices-container-content #cb-customer {
+  margin-top: 18px;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.Invoices .Invoices-container table .Invoices-container-content td {
+  width: 80%;
+  padding-left: 2px;
+}
+
+.Invoices a {
+  text-decoration: none;
+}
+
+.Invoices .btn-area {
+  margin-top: 20px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Invoices .btn-area .btn-edit {
+  cursor: pointer;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #3167eb;
+  border: 1px solid rgba(107, 111, 116, 0.25);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Invoices .btn-area .btn-delete {
+  margin-left: 100px;
+  cursor: pointer;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Invoices .btn-area .btn-complete {
+  margin-left: 100px;
+  cursor: pointer;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Invoice_details {
+  width: 100%;
+  height: 100%;
+  margin-left: 300px;
+  margin-top: 110px;
+  padding-bottom: 70px;
+}
+
+.Invoice_details h1 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.Invoice_details .main-container {
+  width: 60%;
+  height: 100%;
+  -webkit-box-shadow: 0 0.1rem 0.25rem grey;
+          box-shadow: 0 0.1rem 0.25rem grey;
+  margin: 0 auto;
+}
+
+.Invoice_details .main-container .order_total {
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #3167eb;
+}
+
+.Invoice_details .main-container .order-products {
+  width: 100%;
+}
+
+.Invoice_details .main-container .order-products .cartItem_mainContainer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Invoice_details .main-container .order-products .cartItem_mainContainer .img-main img {
+  margin-left: 30px;
+  width: 262.5px;
+  height: 262.5px;
+}
+
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information {
+  margin-left: 50px;
+  margin-top: 20px;
+  height: 100%;
+  width: 360px;
+}
+
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information a {
+  text-decoration: none;
+}
+
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information .name,
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information .price,
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information .color,
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information .size,
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information .amount {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+}
+
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information .color,
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information .size {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information .name {
+  font-size: 23px;
+}
+
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information .separate {
+  margin-top: 20px;
+  width: 300px;
+  height: 2px;
+  background-color: #3167eb;
+}
+
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information .price {
+  margin-top: 15px;
+  color: #b2008d;
+}
+
+.Invoice_details .main-container .order-products .cartItem_mainContainer .information .amount {
+  margin-top: 20px;
+}
+
+.Dashboard {
+  height: 100%;
+  width: 100%;
+  margin-left: 300px;
+  margin-top: 110px;
+  padding-bottom: 50px;
+  /* chart */
+}
+
+.Dashboard .Dashboard-header {
+  font-family: "Open Sans", sans-serif;
+}
+
+.Dashboard .stat {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Dashboard .stat .stat-item {
+  height: 100px;
+  width: 350px;
+  background-color: white;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Dashboard .stat .stat-item .icon-overlay {
+  margin-top: 14px;
+  margin-left: 14px;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Dashboard .stat .stat-item .icon-overlay .icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.Dashboard .stat .stat-item .icon-overlay .icon-container i {
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.Dashboard .stat .stat-item .stat-information h2,
+.Dashboard .stat .stat-item .stat-information h3 {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 20px;
+}
+
+.Dashboard .stat .stat-item .stat-information h3 {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #bdbebe;
+}
+
+.Dashboard .stat .stat-item .stat-information h2 {
+  margin-top: 5px;
+}
+
+.Dashboard .stat .money .icon-overlay {
+  background-color: #fff3e8;
+}
+
+.Dashboard .stat .money .icon-overlay .icon-container {
+  background-color: #ff9110;
+}
+
+.Dashboard .stat .orders .icon-overlay {
+  background-color: #e6f7e8;
+}
+
+.Dashboard .stat .orders .icon-overlay .icon-container {
+  background-color: #00b610;
+}
+
+.Dashboard .stat .products .icon-overlay {
+  background-color: #ebf0fd;
+}
+
+.Dashboard .stat .products .icon-overlay .icon-container {
+  background-color: #2d67ec;
+}
+
+.Dashboard .chart_title {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.Dashboard .recharts-wrapper {
+  margin-top: 50px;
+  margin: 0 auto;
+}
+
+.Dashboard .recharts-legend-wrapper {
+  bottom: -10px !important;
+}
+/*# sourceMappingURL=style.css.map */
