@@ -103,6 +103,52 @@ class Dashboard extends Component {
                     name: '20-12-2021',
                     sales: this.getSale("2021-12-20")
                 },
+                ,
+                {
+                    name: '21-12-2021',
+                    sales: this.getSale("2021-12-21")
+                },
+                {
+                    name: '22-12-2021',
+                    sales: this.getSale("2021-12-22")
+                },
+                {
+                    name: '23-12-2021',
+                    sales: this.getSale("2021-12-23")
+                },
+                {
+                    name: '24-12-2021',
+                    sales: this.getSale("2021-12-24")
+                },
+                ,
+                {
+                    name: '25-12-2021',
+                    sales: this.getSale("2021-12-25")
+                },
+                {
+                    name: '26-12-2021',
+                    sales: this.getSale("2021-12-26")
+                },
+                {
+                    name: '27-12-2021',
+                    sales: this.getSale("2021-12-27")
+                },
+                {
+                    name: '28-12-2021',
+                    sales: this.getSale("2021-12-28")
+                },
+                {
+                    name: '29-12-2021',
+                    sales: this.getSale("2021-12-29")
+                },
+                {
+                    name: '30-12-2021',
+                    sales: this.getSale("2021-12-30")
+                },
+                {
+                    name: '31-12-2021',
+                    sales: this.getSale("2021-12-31")
+                },
 
 
             ]
@@ -126,9 +172,15 @@ class Dashboard extends Component {
             tmp_total = tmp_total.slice(0, 1 + i) + "," + tmp_total.slice(1 + i)
             tmp_total = tmp_total.slice(0, 5 + i) + "," + tmp_total.slice(5 + i)
         }
+        var total = 0;
+        this.context.orders.forEach(element => {
+            if (element.order_status === 'Đã giao')
+                total = total + 1;
+        });
+
         this.setState({
             str_total: tmp_total,
-            count_order: this.context.orders.length,
+            count_order: total,
             count_product: this.context.products.length
         })
     }
